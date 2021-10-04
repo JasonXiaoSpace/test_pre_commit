@@ -26,9 +26,16 @@
     "eslint-plugin-import": "^2.24.2",
     "husky": "^7.0.2"
   },
-  "husky":{
-    "hooks":{
+  "husky": {
+    "hooks": {
       "pre-commit": "echo \"git commit trigger husky pre-commit hook\" "
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add"
+    ]
   }
 }
