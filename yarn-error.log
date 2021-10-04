@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/xiaojianjun/.nvm/versions/node/v12.0.0/bin/node /Users/xiaojianjun/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/xiaojianjun/.yarn/bin:/Users/xiaojianjun/.config/yarn/global/node_modules/.bin:/Users/xiaojianjun/.nvm/versions/node/v12.0.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/xiaojianjun/.yarn/bin:/Users/xiaojianjun/.config/yarn/global/node_modules/.bin:/Users/xiaojianjun/.nvm/versions/node/v12.0.0/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.0.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/xiaojianjun/Library/Caches/Yarn/v6/npm-ansi-styles-3.2.1-41fbb20243e50b12be0f04b8dedbf07520ce841d-integrity/node_modules/ansi-styles/index.js' -> '/Users/xiaojianjun/code/pre_commit_exercise/test_pre_commit/node_modules/@babel/highlight/node_modules/ansi-styles/index.js'
+
+npm manifest: 
+  {
+    "name": "test_pre_commit",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/JasonXiaoSpace/test_pre_commit.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/JasonXiaoSpace/test_pre_commit/issues"
+    },
+    "homepage": "https://github.com/JasonXiaoSpace/test_pre_commit#readme",
+    "devDependencies": {
+      "@typescript-eslint/eslint-plugin": "^4.32.0",
+      "@typescript-eslint/parser": "^4.32.0",
+      "eslint": "^7.32.0",
+      "eslint-config-airbnb-base": "^14.2.1",
+      "eslint-plugin-import": "^2.24.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
