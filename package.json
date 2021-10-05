@@ -25,7 +25,8 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
     "husky": "^7.0.2",
-    "lint-staged": "^11.2.0"
+    "lint-staged": "^11.2.0",
+    "prettier": "^2.4.1"
   },
   "husky": {
     "hooks": {
@@ -34,7 +35,8 @@
   },
   "lint-staged": {
     "**/*.js": [
-      "lint",
+      "npx prettier --write",
+      "npx eslint --fix",
       "git add"
     ]
   }
