@@ -34,9 +34,13 @@
     }
   },
   "lint-staged": {
-    "**/*.js": [
-      "npx prettier --write",
-      "npx eslint --fix",
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,css,less,ejs}": [
+      "prettier --write",
       "git add"
     ]
   }
