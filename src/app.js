@@ -1,18 +1,7 @@
-const c='test'
-   function app( a, b){
-
-      
-        
-
-      
-
-      console.log( a + b) 
+const c = 'test';
+function app(a, b) {
 
 
 
-      
-
-
-
-      
-  }
+  console.log(a + b);
+   }
