@@ -6,7 +6,8 @@
   "scripts": {
     "prepare" :"npx husky install",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "lint": "eslint . --ext .ts --fix"
+    "lint": "eslint . --ext .ts --fix",
+    "pre-commit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -36,8 +37,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "npx eslint src"
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
     ]
   }
 }
