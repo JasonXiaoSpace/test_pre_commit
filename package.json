@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare" :"npx husky install",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "lint": "eslint . --ext .ts --fix",
     "pre-commit": "lint-staged"
   },
   "repository": {
