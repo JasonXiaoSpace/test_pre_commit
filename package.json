@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint '**/*.js --fix'",
-    "prepare" :"npx husky install"
+    "prepare" :"npx husky install",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts",
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run prettier-format && npm run lint"
     }
   },
   "lint-staged": {
