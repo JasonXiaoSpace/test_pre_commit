@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare" :"npx husky install",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint . --ext .ts --fix"
   },
   "repository": {
     "type": "git",

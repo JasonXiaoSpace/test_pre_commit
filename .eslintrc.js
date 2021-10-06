@@ -8,7 +8,4 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  rules: {
-    "no-loops/no-loops":2
-  },
 };
